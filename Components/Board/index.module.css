@@ -1,0 +1,49 @@
+.cell {
+  height: 12px;
+  width: 12px;
+  min-width: 8px;
+  aspect-ratio: 1/1;
+  /* border: 0.5px solid gray; */
+  display: grid;
+  place-items: center;
+  margin: -1px -1px 0px 0px;
+}
+
+#predator {
+  background-color: #dd4e63;
+}
+
+#prey {
+  background-color: #abdd4e;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.playButton {
+  align-self: center;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 1rem 2rem;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: #804edd;
+  font-weight: 900;
+  color: white;
+  border-radius: 10px;
+}
+
+.playButton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.gameBorder {
+  padding: 1rem;
+  margin: 0.5rem 0px 0px 0px;
+  background-color: #f1f1f1;
+  border: 30px solid #2d2346;
+  border-radius: 10px;
+}
