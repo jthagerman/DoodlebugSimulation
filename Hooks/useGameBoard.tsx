@@ -1,5 +1,5 @@
 "use client";
-//@ts-nocheck
+//@ts-ignore-check
 import React, { useState, useContext } from "react";
 import { Board } from "@/app/Simulation/board";
 import { BOARD_HEIGHT, BOARD_WIDTH } from "@/app/Simulation/settings";
@@ -17,6 +17,7 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
   const [gameState, setGameState] = useState(() => initialState);
 
   return (
+    //@ts-ignore
     <GameBoardContext.Provider value={{ gameState, setGameState }}>
       {children}
     </GameBoardContext.Provider>
@@ -24,6 +25,7 @@ export const GameProvider = ({ children }: { children: React.ReactNode }) => {
 };
 
 export default function useGameBoard() {
+  //@ts-ignore
   const { gameState, setGameState } = useContext(GameBoardContext);
 
   const resetGame = () =>
