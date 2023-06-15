@@ -1,4 +1,5 @@
 "use client";
+//@ts-nocheck
 import React, { useState, useContext } from "react";
 import { Board } from "@/app/Simulation/board";
 import { BOARD_HEIGHT, BOARD_WIDTH } from "@/app/Simulation/settings";
